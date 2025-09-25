@@ -101,8 +101,8 @@ This project is licensed under the MIT License – see the LICENSE file for deta
 
 
 ## Contact 📧
-Author: Abhay Jaiswal
-Email: smart.abhayjaiswal2003@gmail.com
+- Author: Abhay Jaiswal
+- Email: smart.abhayjaiswal2003@gmail.com
 
 
 🌱 LeafLens bridges the gap between technology and agriculture, making plant health monitoring accessible and efficient for everyone.
