@@ -65,6 +65,7 @@ pip install -r requirements.txt
 
 ## Usage 🚀
 1). Place leaf images in the dataset folder.
+
 2). Run the Python script:
 ```bash
 python main.py
