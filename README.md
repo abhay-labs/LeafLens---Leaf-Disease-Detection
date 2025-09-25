@@ -49,7 +49,7 @@ LeafLens is developed to **assist farmers and gardeners** in identifying plant l
 ## Installation 💻
 1. Clone the repo:  
 ```bash
-git clone https://github.com/username/LeafLens.git
+https://github.com/abhay-labs/LeafLens---Leaf-Disease-Detection.git
 ```
 
 
