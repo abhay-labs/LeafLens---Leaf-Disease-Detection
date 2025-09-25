@@ -71,6 +71,7 @@ pip install -r requirements.txt
 python main.py
 ```
 3). The system will classify the leaf as healthy or diseased and display results.
+
 4). (Optional) Visualizations of predictions can be generated using Matplotlib.
 
 
