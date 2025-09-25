@@ -47,7 +47,7 @@ LeafLens is developed to **assist farmers and gardeners** in identifying plant l
 ---
 
 ## Installation 💻
-1. Clone the repo:  
+- Clone the repo:  
 ```bash
 https://github.com/abhay-labs/LeafLens---Leaf-Disease-Detection.git
 ```
@@ -64,9 +64,9 @@ pip install -r requirements.txt
 ```
 
 ## Usage 🚀
-1). Place leaf images in the dataset folder.
+- Place leaf images in the dataset folder.
 
-2). Run the Python script:
+- Run the Python script:
 ```bash
 python main.py
 ```
