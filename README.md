@@ -67,7 +67,7 @@ pip install -r requirements.txt
 - Place leaf images in the dataset folder.
 - Run the Python script:
 ```bash
-python main.py
+streamlit run main.py
 ```
 - The system will classify the leaf as healthy or diseased and display results.
 - (Optional) Visualizations of predictions can be generated using Matplotlib.
