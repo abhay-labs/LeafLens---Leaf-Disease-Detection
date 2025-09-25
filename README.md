@@ -65,31 +65,29 @@ pip install -r requirements.txt
 
 ## Usage 🚀
 - Place leaf images in the dataset folder.
-
 - Run the Python script:
 ```bash
 python main.py
 ```
-3). The system will classify the leaf as healthy or diseased and display results.
-
-4). (Optional) Visualizations of predictions can be generated using Matplotlib.
+- The system will classify the leaf as healthy or diseased and display results.
+- (Optional) Visualizations of predictions can be generated using Matplotlib.
 
 
 ## Results 📊
-1). High classification accuracy achieved using CNN architecture.
-2). Can detect common leaf diseases like blight, rust, mildew, and spot diseases.
-3). Early detection allows faster treatment and better crop yield.
+- High classification accuracy achieved using CNN architecture.
+- Can detect common leaf diseases like blight, rust, mildew, and spot diseases.
+- Early detection allows faster treatment and better crop yield.
 
 
 ## Contributing 🤝
 Contributions are welcome! Please contact smart.abhayjaiswal2003@gmail.com
 before making major changes.
 
-1). Fork the repo
-2). Create a new branch (git checkout -b feature-name)
-3). Make your changes and commit (git commit -m "Add feature")
-4). Push to the branch (git push origin feature-name)
-5). Open a Pull Request
+1. Fork the repo
+2. Create a new branch (git checkout -b feature-name)
+3. Make your changes and commit (git commit -m "Add feature")
+4. Push to the branch (git push origin feature-name)
+5. Open a Pull Request
 
 
 ## License 📄
@@ -97,9 +95,9 @@ This project is licensed under the MIT License – see the LICENSE file for deta
 
 
 ## Security ⚠️
-1). For reporting any security issues, please refer to the SECURITY.md file in the repo.
-2). Avoid uploading sensitive personal data.
-3). Use LeafLens in trusted environments only.
+- For reporting any security issues, please refer to the SECURITY.md file in the repo.
+- Avoid uploading sensitive personal data.
+- Use LeafLens in trusted environments only.
 
 
 ## Contact 📧
