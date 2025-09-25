@@ -64,7 +64,7 @@ pip install -r requirements.txt
 ```
 
 ## Usage 🚀
-- Place leaf images in the dataset folder.
+- Create the python environment.
 - Run the Python script:
 ```bash
 streamlit run main.py
