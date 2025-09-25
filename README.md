@@ -64,7 +64,7 @@ pip install -r requirements.txt
 ```
 
 ## Usage 🚀
-- Create the python environment.
+- Create the python virtual environment.
 - Run the Python script:
 ```bash
 streamlit run main.py
