@@ -1,14 +1,19 @@
 import streamlit as st
 import requests
+import streamlit.components.v1 as components
 
+# ---------------------------
 # Streamlit page configuration
+# ---------------------------
 st.set_page_config(
     page_title="Leaf Disease Detection",
     layout="wide",
-    initial_sidebar_state="collapsed"
+    initial_sidebar_state="expanded"
 )
 
+# ---------------------------
 # Custom CSS for modern UI
+# ---------------------------
 st.markdown("""
 <style>
 .stApp {
@@ -65,19 +70,42 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+# ---------------------------
+# Sidebar Donation Button
+# ---------------------------
+with st.sidebar:
+    st.markdown("## ☕ Support LeafLens")
+    st.markdown(
+        "🌱 With every contribution you make, we plant a tree! Help LeafLens grow while helping the planet:\n\n"
+        "[Donate via BuyMeACoffee](https://www.buymeacoffee.com/smartabhaye)"
+    )
+    # Optional: Official BuyMeACoffee button image
+    components.html("""
+    <a href="https://www.buymeacoffee.com/smartabhaye" target="_blank">
+        <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" 
+             alt="Buy Me A Coffee" style="height: 60px; width: 217px;">
+    </a>
+    """, height=70)
+
+# ---------------------------
 # Page header
+# ---------------------------
 st.markdown("""
 <div style='text-align: center; margin-top: 1em;'>
     <span style='font-size:2.5em;'>🌿</span>
-    <h1 style='color: #1565c0; margin-bottom:0;'>Leaf Disease Detection</h1>
+    <h1 style='color: #1565c0; margin-bottom:0;'>Leaf Lens 🔍</h1>
     <p style='color: #616161; font-size:1.15em;'>Upload a leaf image to detect diseases and get expert recommendations.</p>
 </div>
 """, unsafe_allow_html=True)
 
+# ---------------------------
 # API URL
+# ---------------------------
 api_url = "http://leaf-diseases-detect.vercel.app"
 
+# ---------------------------
 # Layout columns
+# ---------------------------
 col1, col2 = st.columns([1, 2])
 
 with col1:
@@ -90,7 +118,7 @@ with col1:
 with col2:
     if uploaded_file:
         if st.button("🔍 Detect Disease", use_container_width=True):
-            with st.spinner("Analyzing image and contacting API..."):
+            with st.spinner("Analyzing disease in image ..."):
                 try:
                     files = {
                         "file": (uploaded_file.name, uploaded_file.getvalue(), uploaded_file.type)
@@ -137,6 +165,22 @@ with col2:
 
                         # Timestamp
                         st.markdown(f"<div class='timestamp'>🕒 {result.get('analysis_timestamp', 'N/A')}</div>", unsafe_allow_html=True)
+
+                        # ---------------------------
+                        # BuyMeACoffee button inside result card
+                        # ---------------------------
+                        st.markdown("<hr>", unsafe_allow_html=True)
+                        st.markdown(
+                            "Liked the analysis? Support us to keep LeafLens free!\n\n"
+                            "[☕ Donate via BuyMeACoffee](https://www.buymeacoffee.com/smartabhaye)"
+                        )
+                        components.html("""
+                        <a href="https://www.buymeacoffee.com/smartabhaye" target="_blank">
+                            <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" 
+                                 alt="Buy Me A Coffee" style="height: 60px; width: 217px;">
+                        </a>
+                        """, height=70)
+
                         st.markdown("</div>", unsafe_allow_html=True)
 
                     else:
