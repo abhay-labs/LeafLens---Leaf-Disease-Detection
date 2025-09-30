@@ -99,7 +99,9 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ---------------------------
-
+# API URL
+# ---------------------------
+api_url = "http://leaf-diseases-detect.vercel.app"
 
 # ---------------------------
 # Layout columns
